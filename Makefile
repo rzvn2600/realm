@@ -2,7 +2,7 @@
 # Razvan.Gherlea@Concur.com
 
 # name of the plugin
-PLUGIN_NAME  = custom-realm
+PLUGIN_NAME  = assignrole-realm
 
 # versions
 VERSIONS     = 6.1.1
@@ -45,7 +45,7 @@ all: $(VERSIONS)
 $(VERSIONS):
 	@$(ECHO)
 	@$(ECHO) "$(WARN_COLOR)Building v$@ ...$(NO_COLOR)"
-	VERSION='$@' rpmbuild -D "_topdir `readlink -f $(RPMBUILD)`" -bb elasticsearch-x-pack-concur-$(PLUGIN_NAME).spec
+	VERSION='$@' rpmbuild -D "_topdir `readlink -f $(RPMBUILD)`" -bb x-pack-concur-$(PLUGIN_NAME).spec
 	@$(ECHO)
 
 clean:

@@ -3,7 +3,7 @@
 # settings
 %define target  /opt/elasticsearch/plugins
 %define source  %(pwd)/rpmbuild/SOURCES
-%define plugin  custom-realm
+%define plugin  assignrole-realm
 
 # get version
 %define version %{getenv:VERSION}
@@ -25,8 +25,8 @@ to be ready for installation.
 %install
 mkdir -p %{buildroot}%{target}
 
-cp -a %{source}/%{plugin}-%{version}.zip %{buildroot}%{target}
+cp -a %{source}/x-pack-concur-%{plugin}-%{version}.zip %{buildroot}%{target}
 
 %files
 %defattr(0644,root,root,0755)
-%{target}/%{plugin}-%{version}.zip
+%{target}/x-pack-concur-%{plugin}-%{version}.zip
