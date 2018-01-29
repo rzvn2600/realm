@@ -12,7 +12,7 @@
 Summary:     X-pack Extension: %{plugin}
 Name:        elasticsearch-x-pack-concur-%{plugin}
 Version:     %{version}
-Release:     1.cnqr
+Release:     2.cnqr
 License:     proprietary
 URL:         http://www.elastic.co
 BuildArch:   noarch
