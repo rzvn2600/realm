@@ -2,7 +2,7 @@
 # Razvan.Gherlea@Concur.com
 
 # name of the plugin
-PLUGIN_NAME  = custom-realm
+PLUGIN_NAME  = assignrole-realm
 
 # versions
 VERSIONS     = 6.1.1
